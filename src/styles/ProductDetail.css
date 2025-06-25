@@ -1,0 +1,149 @@
+.product-detail-container {
+    padding: 1rem;
+    margin-top:80px ;
+    font-family: Arial, sans-serif;
+}
+
+
+.product-detail-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+
+.product-title {
+    text-align: left;
+    font-size: 24px;
+    margin: 0;
+}
+
+
+
+.back_button {
+    background-color: #273F4F;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform ease 0.2s;
+}
+
+.back_button:hover {
+    background-color: #eb571c;
+    animation: sacudir 0.5s ease;
+    }
+    
+    @keyframes sacudir {
+        0% {
+            transform: translateX(0);
+        }
+    
+        30% {
+            transform: translateX(-5px);
+        }
+    
+        60% {
+            transform: translateX(3px);
+        }
+    
+        100% {
+            transform: translateX(0);
+        }
+    }
+.availability-section{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+.availability-section h3{
+    color: rgba(0, 0, 0, 0.527);
+    font-size: 1.5rem;
+}
+
+.availability-section button.btn-primary{
+    width: 150px;
+    padding: 10px;
+    background-color:#273F4F;
+    border: none;
+}
+
+.availability-section .btn-primary:hover{
+        background-color: #eb571c;
+        animation: brinco 0.5s ease;
+    }
+    
+    @keyframes brinco {
+        0% {
+            transform: translateY(0);
+        }
+    
+        30% {
+            transform: translateY(-5px);
+        }
+    
+        60% {
+            transform: translateY(3px);
+        }
+    
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    
+
+.product-detail-body {
+    padding: 1rem 0;
+}
+
+
+.product-description {
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+
+.product-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.product-image {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.review-section {
+    margin-top: 40px;
+}
+
+.rating-summary {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.reviews-list {
+    margin-bottom: 30px;
+}
+
+.review-card {
+    border-top: 1px solid #ccc;
+    padding-top: 12px;
+    margin-top: 12px; 
+}

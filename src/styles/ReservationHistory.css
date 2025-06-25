@@ -1,0 +1,44 @@
+.reservation-history-container {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 2rem;
+}
+
+.reservation-list {
+    list-style: none;
+    padding: 0;
+}
+
+.reservation-item {
+    background-color: #f2f2f2;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.reservation-item h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.error-msg {
+    color: red;
+    font-weight: bold;
+ }
+
+.reservation-history-btn{
+    margin-top: 25px;
+    padding: 12px 20px;
+    background-color: #293a4b;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.reservation-history-btn:hover{
+
+    background-color: #005fa3;
+}

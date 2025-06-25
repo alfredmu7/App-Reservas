@@ -1,0 +1,27 @@
+.perfil-container {
+    max-width: 600px;
+    margin: 80px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 3px;
+    background-color: #EFEEEA;
+    text-align: center;
+}
+
+.perfil-avatar {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background-color: #eb571c;
+    color: white;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil-info p {
+    font-size: 18px;
+    margin: 10px 0;
+}

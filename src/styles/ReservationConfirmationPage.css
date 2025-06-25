@@ -1,0 +1,93 @@
+.reservation-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.product-info img {
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+.user-info,
+.date-info {
+    display: block;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #EFEEEA;
+    border-radius: 8px;
+}
+
+
+.confirm-button {
+    margin-top: 25px;
+    padding: 12px 20px;
+    background-color: #273F4F;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.confirm-button:hover {
+    background-color: #eb571c; 
+}
+
+.back-button{
+    margin: 5px;
+    padding: 12px 15px;
+    background-color: #EFEEEA;
+    color: rgb(3, 3, 3);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.back-button:hover {
+    background-color: #3f3f3f;
+    color: white;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    width: 70%;
+    padding: 30px 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h3 {
+    margin-bottom: 15px;
+}
+
+.modal-content button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #273F4F;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer; 
+    transition: all .3s ease;
+}
+
+.modal-content button:hover{
+    background-color: #eb571c;
+}

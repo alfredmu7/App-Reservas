@@ -1,0 +1,114 @@
+.product-list-admin {
+    padding: 20px;
+    margin-top: 80px;
+    background-color: white;
+    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    
+    
+}
+
+th,
+td {
+    border: 1px solid #e0e0e0;
+    padding: 8px;
+    text-align: left;
+    
+    
+}
+
+th {
+    background-color: #f4f4f4;
+    
+}
+
+.category-form{
+    margin-right:10px;
+}
+
+.red-button {
+    align-self: center;
+    margin-right: 10px;
+    background-color: #833030;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.red-button:hover{
+    background-color: #d1122c;
+    animation: saltar 0.5s ease;
+}
+.blue-button {
+    align-self: center;
+    margin-right: 10px;
+    background-color: #273F4F;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.blue-button:hover{
+    background-color: #eb571c;
+}
+
+.edit-form {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color:#EFEEEA;
+    border-radius: 8px;
+}
+
+.edit-form input,
+.edit-form textarea {
+    display: block;
+    margin-top: 5px;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 20px;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.img-form{
+    margin-top: 25px;
+}
+
+.green-button {
+    background-color: #273F4F;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 20px;
+    transition: all .3s ease;
+}
+
+.green-button:hover{
+    background-color: #eb571c;
+}
+
+.gray-button {
+    background-color: gray;
+    color: white;
+    padding: 6px 12px;
+    margin-left: 8px;
+    border: none;
+    border-radius: 20px; 
+    transition: all .5s ease;
+}
+
+.gray-button:hover{
+    background-color: rgb(61, 61, 61);;
+}

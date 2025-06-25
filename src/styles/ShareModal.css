@@ -1,0 +1,89 @@
+.share-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.share-modal {
+    background: white;
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+    position: relative;
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-title{
+   color: rgb(87, 87, 87);
+   margin: 15px 0;
+}
+
+.products-description {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.custom-message {
+    width: 100%;
+    height: 60px;
+    margin-top: 15px;
+    padding: 8px;
+    resize: none;
+}
+
+.share-buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-btn {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.fb {
+    background-color: #273F4F;
+    border-radius: 20px;
+}
+
+
+.ig {
+    background-color: #273F4F;
+    border-radius: 20px;
+}
+
+.wa {
+    background-color: #273F4F;
+    border-radius: 20px;
+}

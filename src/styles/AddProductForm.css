@@ -1,0 +1,124 @@
+
+.add-product-form {
+    max-width: 700px;
+    margin: 20px auto;
+    margin-top: 100px;
+    padding: 25px;
+    background-color: #EFEEEA;
+    border-radius: 8px;
+    box-shadow: 0 0 3px ;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: Arial, sans-serif;
+}
+
+
+.add-product-form h2 {
+    margin-bottom: 15px;
+    color: #222;
+}
+
+
+
+.add-product-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 14px;
+    color: #555;
+}
+
+
+.add-product-form input[type="text"],
+.add-product-form textarea,
+.add-product-form input[type="file"] {
+    margin-top: 5px;
+    padding: 8px 12px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+
+.add-product-form textarea {
+    min-height: 80px;
+}
+
+
+.features-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.feature-item {
+    background: #e8e8e8;
+    padding: 6px 12px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+select#category{
+    border-radius: 20px;
+    padding: 2px;
+}
+
+
+.add-product-form button[type="submit"] {
+    width: fit-content;
+    padding: 12px 30px;
+    background-color: #273F4F;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+.add-product-form button[type="submit"]:hover {
+    background-color: #eb571c;
+}
+
+.add-product-form p {
+    margin: 0;
+    font-weight: 600;
+}
+
+.add-product-form p.error {
+    color: #d9534f;
+}
+
+.add-product-form p.success {
+    color: #28a745;
+}
+
+.preview-container{
+    display: flex;
+    gap: 5px;
+}
+
+.preview-item p{
+    font-size: 12px;
+    font-weight: 100;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .add-product-form {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .add-product-form button[type="submit"] {
+        width: 100%;
+    }
+}

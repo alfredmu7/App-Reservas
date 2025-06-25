@@ -1,0 +1,75 @@
+.category-admin-container {
+    max-width: 400px;
+    margin: 20px auto;
+    margin-top: 80px;
+    padding: 20px;
+    background-color: #f7f9fc;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.category-admin-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.category-admin-container input {
+    width: 100%;
+    padding: 8px 12px;
+    margin-bottom: 12px;
+    border: 1.5px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.category-admin-container input:focus {
+    border-color: #3b82f6;
+    outline: none;
+}
+
+.category-admin-container button {
+    background-color: #273F4F;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.category-admin-container button:hover {
+    background-color: #eb571c;
+}
+
+.category-admin-container ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.category-admin-container ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1rem;
+    color: #444;
+}
+
+.category-admin-container ul li button {
+    background-color: #833030;
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    width: auto;
+}
+
+.category-admin-container ul li button:hover {
+    background-color: #d1122c; }
