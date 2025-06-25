@@ -1,7 +1,7 @@
 package com.jobix.jobix_Backend.service;
 
 
-import com.sendgrid.*; // Este importa Email, Content, Mail, SendGrid, etc.
+import com.sendgrid.*; // Este importa Email, Content, Mail, SendGrid, etc. se eliminó clave, por seguridad
 import com.sendgrid.helpers.mail.Mail;
 import com.sendgrid.helpers.mail.objects.Content;
 import com.sendgrid.helpers.mail.objects.Email;
@@ -16,14 +16,15 @@ import java.io.IOException;
 @Service
 public class EmailService {
 
-    // se inyecta la API key desde el properties
-    @Value("${sendgrid.api.key}")
+    // se eliminó la clave para confirmar correos post-reserva
+    // inyecta la API key desde el properties
+    //@Value("${sendgrid.api.key}")
     private String sendgridApiKey;
 
     //Envía un correo de confirmación de reserva al usuario
     public void sendReservationConfirmationEmail(String toEmail, String subject, String contentText) throws IOException {
         // Remitente (puede ser un correo verificado o genérico)
-        Email from = new Email("alfredmu7@hotmail.com");
+        Email from = new Email("example@confirmmessage.com");// se cambió el correo que estaba registrado con SendGrid
         Email to = new Email(toEmail);
         Content content = new Content("text/plain", contentText);
         Mail mail = new Mail(from, subject, to, content);
