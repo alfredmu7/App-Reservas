@@ -1,8 +1,29 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import "../styles/WhatsappButton.css"
 
 // Este componente recibe un número de WhatsApp y un mensaje opcional
 export const WhatsappButton = ({phoneNumber, message}) => {
+
+  const buttonRef = useRef(null);//se referencia boton
+
+  // Cada 5 segundos , añadimos la clase 'jump' para animar el botón
+  useEffect (()=> { 
+  const interval = setInterval(() => {
+
+    const btn = buttonRef.current;
+    if(btn){
+      btn.classList.add("jump");// Añade la clase que activa la animación
+
+      setTimeout(() => {
+        btn.classList.remove("jump")// Luego de que termina la animación (0.6s), la removemos para poder reiniciarla
+      }, 600);
+    }
+  }, 5000);// salta cada 5 seg
+
+  // Limpiamos el intervalo cuando se desmonta el componente
+  return () => clearInterval(interval);
+},[]);
+
 
 
     const handleClick = () => {
@@ -26,6 +47,7 @@ export const WhatsappButton = ({phoneNumber, message}) => {
 
   return (
     <button
+    ref={buttonRef}
     className='whatsapp-btn'
     onClick={handleClick}
     title='Chatea con el proveedor'>

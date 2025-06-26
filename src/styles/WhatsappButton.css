@@ -6,14 +6,15 @@
     border: none;
     cursor: pointer;
     z-index: 1000;
+    transition: transform 0.3s ease
     
     
 }
 
 .whatsapp-icon {
     width: auto;
-    color: rgb(3, 117, 3);
-    font-size: 35px;
+    color: rgb(6, 160, 6);
+    font-size: 45px;
     transition: transform 0.3s ease;
 }
 
@@ -21,3 +22,29 @@
     color: rgb(4, 189, 4);
     transform: scale(1.3);
 }
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(-15px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    70% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.jump {
+    animation: jump 0.6s ease; }
